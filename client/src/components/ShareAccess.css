@@ -1,0 +1,176 @@
+.share-access {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.share-header {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.share-header h1 {
+  font-size: 36px;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.share-header p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.password-container,
+.error-container {
+  max-width: 450px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.lock-icon {
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.password-container h2,
+.error-container h2 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.password-container p,
+.error-container p {
+  margin: 0 0 24px 0;
+  color: #666;
+  font-size: 15px;
+}
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.password-input {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.password-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.documents-list {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.documents-list h2 {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: all 0.2s;
+}
+
+.document-item:hover {
+  background: #f0f4ff;
+  transform: translateX(4px);
+}
+
+.document-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  color: #667eea;
+}
+
+.document-details {
+  flex: 1;
+}
+
+.document-details h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: #333;
+  word-break: break-word;
+}
+
+.document-details p {
+  margin: 0;
+  font-size: 13px;
+  color: #999;
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+  white-space: nowrap;
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+}
+
+.share-footer {
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.share-footer p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .document-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-download {
+    width: 100%;
+    justify-content: center;
+  }
+}
